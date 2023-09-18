@@ -106,7 +106,7 @@ class FileValidationBehavior extends ModelBehavior {
      * @param int $size
      * @return bool
      */
-    public function filesize(Model $model, $data, $size = 5242880) {
+    public function filesize(Model $model, $data, $size = 200) {
         return $this->_validate($model, $data, 'size', array($size));
     }
 
